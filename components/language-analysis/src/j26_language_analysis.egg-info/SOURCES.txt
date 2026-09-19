@@ -6,9 +6,12 @@ src/j26_language_analysis.egg-info/dependency_links.txt
 src/j26_language_analysis.egg-info/requires.txt
 src/j26_language_analysis.egg-info/top_level.txt
 src/language_analysis/__init__.py
+src/language_analysis/contract.py
 src/language_analysis/pipeline.py
 src/language_analysis/preprocessing.py
 src/language_analysis/sentiment.py
+tests/test_contract.py
+tests/test_contract_schema.py
 tests/test_pipeline.py
 tests/test_preprocessing.py
 tests/test_sentiment.py
