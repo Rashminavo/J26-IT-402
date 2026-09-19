@@ -1,0 +1,21 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/backend",
+        "${workspaceFolder}/components/language-analysis/src",
+        "${workspaceFolder}/components/behavioural-tracking/src",
+        "${workspaceFolder}/components/physiological-analysis/src",
+        "${workspaceFolder}/components/facial-analysis/src"
+    ],
+
+    "python.testing.pytestEnabled": true,
+
+    "python.testing.pytestArgs": [
+        "backend/tests",
+        "components/language-analysis/tests",
+        "components/behavioural-tracking/tests",
+        "components/physiological-analysis/tests",
+        "components/facial-analysis/tests"
+    ]
+}
