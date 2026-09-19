@@ -104,3 +104,63 @@ def test_score_not_found(client):
     )
 
     assert response.status_code == 404
+
+def test_language_analysis_endpoint(client):
+    response = client.post(
+        "/api/v1/language/analyze",
+        json={
+            "text": "I am feeling happy and hopeful today.",
+            "observation_id": "OBS-LANGUAGE-001",
+            "user_id": "USER-TEST-001",
+            "session_id": "SESSION-TEST-001",
+        },
+    )
+
+    assert response.status_code == 201
+
+    data = response.get_json()
+
+    assert data["message"] == "Language analysis completed."
+
+    score = data["data"]
+
+    assert score["component"] == "language_analysis"
+    assert score["score"]["unit"] == "vader_compound"
+
+def test_behavioural_analysis_endpoint(client):
+    response = client.post(
+        "/api/v1/behavioural/analyze",
+        json={
+            "raw_data": {
+                "screen_time_minutes": 260,
+                "app_usage_minutes": 190,
+                "typing_speed": 35,
+            },
+            "historical_screen_times": [
+                200,
+                210,
+                190,
+                205,
+            ],
+            "observation_id": "OBS-BEHAVIOUR-001",
+            "user_id": "USER-TEST-001",
+            "session_id": "SESSION-TEST-001",
+        },
+    )
+
+    assert response.status_code == 201
+
+    data = response.get_json()
+
+    assert (
+        data["message"]
+        == "Behavioural analysis completed."
+    )
+
+    score = data["data"]
+
+    assert score["component"] == "behavioural_tracking"
+    assert (
+        score["score"]["unit"]
+        == "baseline_deviation_reference"
+    )

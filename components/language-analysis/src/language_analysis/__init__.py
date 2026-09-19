@@ -1,3 +1,4 @@
+from .contract import build_language_score
 from .pipeline import analyze_text
 from .preprocessing import clean_text, preprocess_text, tokenize_text
 from .sentiment import analyze_sentiment
@@ -5,6 +6,7 @@ from .sentiment import analyze_sentiment
 __all__ = [
     "analyze_text",
     "analyze_sentiment",
+    "build_language_score",
     "clean_text",
     "preprocess_text",
     "tokenize_text",
