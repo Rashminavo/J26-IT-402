@@ -198,3 +198,52 @@ def test_physiological_analysis_endpoint(client):
         == "physiological_stress_score_pending"
     )
     assert score["score"]["value"] is None
+
+
+def test_facial_analysis_endpoint(client):
+    frame = [
+        [
+            [0, 0, 0],
+            [0, 0, 0],
+        ],
+        [
+            [0, 0, 0],
+            [0, 0, 0],
+        ],
+    ]
+
+    frames = [frame for _ in range(16)]
+
+    bounding_boxes = [
+        [0, 0, 2, 2]
+        for _ in range(16)
+    ]
+
+    response = client.post(
+        "/api/v1/facial/analyze",
+        json={
+            "frames": frames,
+            "bounding_boxes": bounding_boxes,
+            "observation_id": "OBS-FACIAL-001",
+            "user_id": "USER-TEST-001",
+            "session_id": "SESSION-TEST-001",
+        },
+    )
+
+    assert response.status_code == 201
+
+    data = response.get_json()
+
+    assert (
+        data["message"]
+        == "Facial analysis completed."
+    )
+
+    score = data["data"]
+
+    assert score["component"] == "facial_analysis"
+    assert (
+        score["score"]["unit"]
+        == "facial_emotional_evidence_pending"
+    )
+    assert score["score"]["value"] is None
