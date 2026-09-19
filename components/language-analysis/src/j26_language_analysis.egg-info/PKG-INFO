@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: j26-language-analysis
+Version: 0.1.0
+Summary: J26-IT-402 language analysis component
+Requires-Python: <3.14,>=3.10
+Requires-Dist: nltk<4.0,>=3.9

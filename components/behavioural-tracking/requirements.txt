@@ -1,0 +1,3 @@
+# Reference MVP currently uses Python standard library only.
+# ML dependencies will be added when Isolation Forest, LSTM and
+# Random Forest research implementation begins.
