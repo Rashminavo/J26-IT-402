@@ -3,6 +3,7 @@ from flask import Flask, jsonify
 from app.api import (
     behavioural_bp,
     language_bp,
+    physiological_bp,
     scores_bp,
 )
 
@@ -13,6 +14,7 @@ def create_app() -> Flask:
     app.register_blueprint(scores_bp)
     app.register_blueprint(language_bp)
     app.register_blueprint(behavioural_bp)
+    app.register_blueprint(physiological_bp)
 
     @app.get("/health")
     def health():

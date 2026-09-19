@@ -164,3 +164,37 @@ def test_behavioural_analysis_endpoint(client):
         score["score"]["unit"]
         == "baseline_deviation_reference"
     )
+
+
+def test_physiological_analysis_endpoint(client):
+    response = client.post(
+        "/api/v1/physiological/analyze",
+        json={
+            "measurements": {
+                "heart_rate": 78,
+                "heart_rate_variability": 42,
+                "body_temperature": 36.8
+            },
+            "observation_id": "OBS-PHYSIOLOGICAL-001",
+            "user_id": "USER-TEST-001",
+            "session_id": "SESSION-TEST-001",
+        },
+    )
+
+    assert response.status_code == 201
+
+    data = response.get_json()
+
+    assert (
+        data["message"]
+        == "Physiological analysis completed."
+    )
+
+    score = data["data"]
+
+    assert score["component"] == "physiological_analysis"
+    assert (
+        score["score"]["unit"]
+        == "physiological_stress_score_pending"
+    )
+    assert score["score"]["value"] is None
