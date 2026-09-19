@@ -1,12 +1,17 @@
 {
+    "python.defaultInterpreterPath": "C:\\Users\\rashm\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+
     "python.analysis.extraPaths": [
         "${workspaceFolder}/backend",
-        "${workspaceFolder}/components/language-analysis/src"
+        "${workspaceFolder}/components/language-analysis/src",
+        "${workspaceFolder}/components/behavioural-tracking/src"
     ],
+
     "python.testing.pytestEnabled": true,
+
     "python.testing.pytestArgs": [
         "backend/tests",
-        "components/language-analysis/tests"
-    ],
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+        "components/language-analysis/tests",
+        "components/behavioural-tracking/tests"
+    ]
 }
