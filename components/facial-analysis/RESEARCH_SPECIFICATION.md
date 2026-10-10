@@ -3,7 +3,9 @@
 - **Project:** AI-Powered Holistic Mental Health Assessment and Monitoring Framework
 - **Component:** C3 — Facial Emotion and Micro-Expression Analysis
 - **Status:** Research specification draft; not a validated clinical method
-**Implementation branch:** `dev`
+- **C3 development branch:** `akash`
+- **Integration branch:** `dev`
+- **Stable branch:** `main`
 
 ## 1. Purpose and scope
 
@@ -28,7 +30,7 @@ These defaults are engineering placeholders, not proposal-mandated parameters. T
 
 ### Primary dataset
 
-Use CASME II as the initial research dataset after obtaining the dataset through an authorised route and checking the applicable access/use terms. The original publication reports 247 spontaneous micro-expression samples from 26 participants, recorded at 200 frames per second, with onset/offset annotations, action-unit annotations, and five emotion categories. It also reports marked class imbalance (for example, 60 disgust samples and 7 sadness samples). The original baseline used LBP-TOP features, an SVM classifier, and leave-one-subject-out validation, reporting 63.41% accuracy for its five-class experiment.
+Use CASME II as the initial research dataset after obtaining the dataset through an authorised route and checking the applicable access/use terms. The original publication reports 247 spontaneous micro-expression samples from 26 participants, recorded at 200 frames per second, with onset/offset annotations, action-unit annotations, and five main categories. The discussion gives an example of imbalance (60 disgust versus 7 sadness samples), while the paper's five-class baseline protocol evaluates happiness, surprise, disgust, repression, and others. Preserve the supplied native annotations and confirm the exact annotation workbook/protocol before constructing the final label map. The original baseline used LBP-TOP features, an SVM classifier, and leave-one-subject-out validation, reporting 63.41% accuracy for its five-class experiment.
 
 ### Required rules
 
@@ -40,20 +42,18 @@ Use CASME II as the initial research dataset after obtaining the dataset through
 
 ### Proposed canonical sample manifest
 
-Use one row per annotated micro-expression event, with at least these fields:
+One row represents one annotated micro-expression event. The canonical CSV fields are defined in `dataset_manifest_template.csv` and validated by `src/facial_analysis/dataset_manifest.py`:
 
-- `sample_id`: stable unique sample identifier
-- `subject_id`: participant identifier used for group-based splits
-- `video_path`: local path to the authorised video/sample
-- `native_label`: unmodified source label
-- `onset_frame`: onset frame index when available
-- `apex_frame`: apex frame index when available
-- `offset_frame`: offset frame index when available
-- `fps`: recorded frame rate when known
-- `action_units`: optional source AU annotations
-- `source_dataset`: for example, `CASME_II`
+- `source_dataset`: source dataset identifier such as `CASME_II`
+- `sample_id`: stable unique identifier within a source dataset
+- `subject_id`: participant identifier retained for subject-independent evaluation
+- `video_path`: relative path to the authorised video/sample, relative to a configured local dataset root
+- `native_label`: unmodified source label; do not silently map labels
+- `onset_frame`, `apex_frame`, `offset_frame`: optional as a group for datasets with these annotations; if one is present, all three must be present and ordered
+- `fps`: optional finite positive source frame rate
+- `action_units`: optional source AU annotation
 
-Manifest validation must reject missing IDs/labels, invalid frame ordering, invalid FPS, and missing video paths at the point where video access is required. Do not silently invent missing annotation values.
+The manifest validator checks required IDs/labels, duplicate source-dataset/sample identifiers, path safety, temporal annotation order, FPS values, and optionally local video-file existence. A header-only template is intentionally valid; the training entry point must separately require at least one sample. It performs metadata validation only and does not decode videos or claim model validity.
 
 ## 4. Preprocessing and temporal representation
 
@@ -128,8 +128,8 @@ A recognised facial-expression class is not itself a mental-health diagnosis or 
 
 ## 8. Incremental implementation plan
 
-1. Add this research specification and review it against the proposal.
-2. Implement a canonical manifest schema/parser and tests without requiring the dataset or PyTorch.
+1. Keep this research specification reviewed against the proposal.
+2. Implement and test the canonical manifest parser without requiring the dataset or PyTorch.
 3. Add a dataset adapter for the actual authorised CASME II annotation layout after confirming the supplied metadata format.
 4. Implement sample-level temporal resampling with tests using synthetic frame arrays; preserve sample and subject IDs.
 5. Add and pin a compatible PyTorch/TorchVision environment; smoke-test MobileNetV3-Large loading and documented preprocessing.
@@ -137,7 +137,7 @@ A recognised facial-expression class is not itself a mental-health diagnosis or 
 7. Add a reproducible LOSO training/evaluation entry point, baselines and metrics.
 8. Only after experimental evaluation, define how model outputs map into the component's non-clinical evidence output and shared contract.
 
-Every milestone must preserve the current shared API contract and pass the full project test suite before committing to `dev`.
+Every milestone must preserve the current shared API contract and pass the full project test suite before committing to `akash`; integration should proceed through `dev`, then `main` after verification.
 
 ## 9. References
 
