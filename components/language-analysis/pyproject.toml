@@ -8,7 +8,8 @@ version = "0.1.0"
 description = "J26-IT-402 language analysis component"
 requires-python = ">=3.10,<3.14"
 dependencies = [
-    "nltk>=3.9,<4.0"
+    "nltk>=3.9,<4.0",
+    "scikit-learn>=1.5,<2.0"
 ]
 
 [tool.setuptools]
