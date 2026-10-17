@@ -33,3 +33,24 @@ def test_preprocess_empty_text():
 def test_preprocess_rejects_non_string():
     with pytest.raises(TypeError):
         preprocess_text(123)
+
+
+def test_clean_text_decodes_html_entities():
+    result = clean_text("I&#39;m not okay &amp; tired")
+
+    assert result == "I'm not okay & tired"
+
+
+def test_tokenize_preserves_negation_words():
+    result = tokenize_text("I am not happy and never feel okay")
+
+    assert "not" in result
+    assert "never" in result
+
+
+def test_preprocess_whitespace_only_text():
+    result = preprocess_text("   \n\t  ")
+
+    assert result["cleaned_text"] == ""
+    assert result["tokens"] == []
+    assert result["token_count"] == 0
