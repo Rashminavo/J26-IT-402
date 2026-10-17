@@ -40,6 +40,20 @@ def build_temporal_sequences(
 
         start += stride
 
+    # Add an end-aligned window only when regular windows miss the final frame.
+    if len(frames) >= sequence_length:
+        tail_start = len(frames) - sequence_length
+        last_regular_start = start - stride
+
+        if last_regular_start + sequence_length < len(frames):
+            if tail_start != last_regular_start:
+                tail_window = frames[
+                    tail_start:tail_start + sequence_length
+                ]
+                sequences.append(
+                    np.stack(tail_window, axis=0)
+                )
+
     return sequences
 
 
