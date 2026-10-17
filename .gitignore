@@ -33,3 +33,6 @@ Thumbs.db
 
 # Packaging metadata
 *.egg-info/
+
+# Research datasets (keep local, do not commit)
+/components/physiological-analysis/data/

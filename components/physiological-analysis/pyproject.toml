@@ -7,10 +7,21 @@ name = "j26-physiological-analysis"
 version = "0.1.0"
 description = "J26-IT-402 physiological data integration component"
 requires-python = ">=3.10,<3.14"
-dependencies = []
+dependencies = [
+    "numpy>=2.0,<3.0",
+    "pandas>=2.2,<4.0",
+    "scipy>=1.13,<2.0",
+    "scikit-learn>=1.5,<2.0",
+]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=9,<10",
+    "jsonschema>=4.0,<5.0",
+]
