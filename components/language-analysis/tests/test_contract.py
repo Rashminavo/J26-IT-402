@@ -22,3 +22,46 @@ def test_build_language_score():
 
     assert result["risk_level"] is None
     assert result["confidence"] is None
+
+    
+def test_normalized_value_matches_compound_score():
+    result = build_language_score(
+        text="I feel worried and unhappy.",
+        observation_id="OBS-LANG-002",
+        user_id="USER-001",
+        timestamp="2026-09-19T10:00:00+00:00",
+    )
+
+    score = result["score"]
+
+    expected = (score["value"] + 1.0) / 2.0
+
+    assert score["normalized_value"] == expected
+
+
+def test_contract_preserves_identifiers_and_timestamp():
+    timestamp = "2026-09-19T10:00:00+00:00"
+
+    result = build_language_score(
+        text="I feel hopeful today.",
+        observation_id="OBS-LANG-003",
+        user_id="USER-002",
+        session_id="SESSION-003",
+        timestamp=timestamp,
+    )
+
+    assert result["observation_id"] == "OBS-LANG-003"
+    assert result["user_id"] == "USER-002"
+    assert result["session_id"] == "SESSION-003"
+    assert result["timestamp"] == timestamp
+    assert result["data_status"] == "AVAILABLE"
+
+def test_build_language_score_rejects_non_string_text():
+    import pytest
+
+    with pytest.raises(TypeError, match="text must be a string"):
+        build_language_score(
+            text=123,
+            observation_id="OBS-LANG-004",
+            user_id="USER-001",
+        )
