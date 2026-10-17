@@ -139,3 +139,50 @@ def test_extract_ibi_features_rejects_non_increasing_elapsed_times():
         extract_ibi_features(
             [[2.0, 0.8], [2.0, 0.9]]
         )
+
+def test_extract_ibi_features_excludes_pairs_across_large_gaps():
+    from math import sqrt
+    from physiological_analysis.features import extract_ibi_features
+
+    result = extract_ibi_features(
+        [
+            [1.0, 0.8],
+            [2.0, 0.9],
+            [3.0, 1.1],
+            [20.0, 1.5],
+            [21.0, 1.4],
+        ],
+        max_gap_seconds=5.0,
+    )
+
+    # The 17-second gap must not contribute to RMSSD.
+    expected_rmssd = sqrt((0.1**2 + 0.2**2 + 0.1**2) / 3)
+
+    assert abs(result["ibi_rmssd_seconds"] - expected_rmssd) < 1e-9
+
+
+def test_extract_ibi_features_returns_none_when_no_valid_pairs():
+    from physiological_analysis.features import extract_ibi_features
+
+    result = extract_ibi_features(
+        [
+            [1.0, 0.8],
+            [20.0, 0.9],
+            [40.0, 1.0],
+        ],
+        max_gap_seconds=5.0,
+    )
+
+    assert result["ibi_rmssd_seconds"] is None
+    assert result["ibi_mean_seconds"] == 0.9
+
+
+def test_extract_ibi_features_rejects_invalid_gap_threshold():
+    import pytest
+    from physiological_analysis.features import extract_ibi_features
+
+    with pytest.raises(ValueError):
+        extract_ibi_features(
+            [[1.0, 0.8], [2.0, 0.9]],
+            max_gap_seconds=0,
+        )

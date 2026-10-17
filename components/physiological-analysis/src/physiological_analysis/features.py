@@ -19,6 +19,7 @@ def extract_features(
 def count_available_features(
     features: dict[str, float],
 ) -> int:
+    """Return the number of available features."""
     return len(features)
 
 
@@ -32,7 +33,7 @@ def extract_heart_rate_features(
     if not heart_rate_readings:
         raise ValueError("At least one heart-rate reading is required")
 
-    readings = []
+    readings: list[float] = []
 
     for value in heart_rate_readings:
         if isinstance(value, bool) or not isinstance(value, (int, float)):
@@ -107,7 +108,9 @@ def extract_signal_features(
 
     for row in readings:
         if not isinstance(row, list) or len(row) != expected_channels:
-            raise ValueError("Signal reading has an unexpected channel count")
+            raise ValueError(
+                "Signal reading has an unexpected channel count"
+            )
 
         for index, value in enumerate(row):
             if (
@@ -148,21 +151,35 @@ def extract_signal_features(
 
 def extract_ibi_features(
     ibi_readings: list[list[float]],
-) -> dict[str, float]:
+    max_gap_seconds: float = 5.0,
+) -> dict[str, float | None]:
     """
     Extract basic IBI/HRV candidate features.
 
     Each reading contains:
     [elapsed_time_seconds, ibi_duration_seconds].
 
-    RMSSD is calculated from consecutive IBI durations.
-    These are signal features, not stress classifications.
+    RMSSD only uses consecutive IBI intervals whose elapsed-time
+    gap does not exceed max_gap_seconds.
+
+    The default gap threshold is a provisional engineering choice,
+    not a clinically validated cutoff.
     """
     if not isinstance(ibi_readings, list):
         raise TypeError("ibi_readings must be a list")
 
     if len(ibi_readings) < 2:
         raise ValueError("At least two IBI readings are required")
+
+    if (
+        isinstance(max_gap_seconds, bool)
+        or not isinstance(max_gap_seconds, (int, float))
+        or not isfinite(max_gap_seconds)
+        or max_gap_seconds <= 0
+    ):
+        raise ValueError(
+            "max_gap_seconds must be a finite positive number"
+        )
 
     elapsed_times: list[float] = []
     intervals: list[float] = []
@@ -204,12 +221,21 @@ def extract_ibi_features(
         raise ValueError("IBI elapsed times must be strictly increasing")
 
     successive_differences = [
-        current - previous
-        for previous, current in zip(intervals, intervals[1:])
+        intervals[index] - intervals[index - 1]
+        for index in range(1, len(intervals))
+        if elapsed_times[index] - elapsed_times[index - 1]
+        <= max_gap_seconds
     ]
 
-    rmssd = sqrt(
-        mean(difference * difference for difference in successive_differences)
+    rmssd = (
+        sqrt(
+            mean(
+                difference * difference
+                for difference in successive_differences
+            )
+        )
+        if successive_differences
+        else None
     )
 
     return {
