@@ -12,7 +12,12 @@ from .face import (
     load_face_detector,
     select_face_box,
 )
-from .model import MobileNetV3LargeFeatureExtractor
+from .model import (
+    MOBILENET_V3_FEATURE_DIM,
+    MOBILENET_V3_WEIGHTS,
+    FacialFeatureExtractor,
+    MobileNetV3LargeFeatureExtractor,
+)
 from .image_sequence import read_image_sequence_frames
 from .sequence import build_temporal_sequences
 
@@ -56,6 +61,79 @@ def prepare_face_sequence(
     )
 
 
+def extract_facial_sequence_features(
+    sequences: list[np.ndarray],
+    *,
+    extractor: FacialFeatureExtractor | None = None,
+) -> list[np.ndarray]:
+    """Extract one 960-dimensional visual feature per frame and window.
+
+    Input windows must contain RGB uint8 face ROIs with shape
+    (T, 224, 224, 3). Output arrays have shape (T, 960) and dtype float32.
+
+    These are ImageNet-pretrained visual features, not emotion labels,
+    micro-expression probabilities, valence/arousal predictions, or
+    mental-health risk scores. No temporal aggregation is performed.
+    """
+    if not sequences:
+        return []
+
+    # Validate every input before potentially expensive model initialization.
+    for sequence_index, sequence in enumerate(sequences):
+        if not isinstance(sequence, np.ndarray):
+            raise TypeError(
+                f"Sequence {sequence_index} must be a NumPy array"
+            )
+
+        if (
+            sequence.ndim != 4
+            or sequence.shape[0] <= 0
+            or sequence.shape[1:] != (224, 224, 3)
+            or sequence.dtype != np.uint8
+        ):
+            raise ValueError(
+                f"Sequence {sequence_index} must be non-empty RGB uint8 "
+                "with shape (T, 224, 224, 3)"
+            )
+
+    active_extractor = (
+        extractor
+        if extractor is not None
+        else MobileNetV3LargeFeatureExtractor()
+    )
+
+    feature_sequences = []
+
+    for sequence_index, sequence in enumerate(sequences):
+        features = active_extractor.extract(sequence)
+
+        if not isinstance(features, np.ndarray):
+            raise TypeError(
+                f"Features for sequence {sequence_index} must be a NumPy array"
+            )
+
+        expected_shape = (
+            sequence.shape[0],
+            MOBILENET_V3_FEATURE_DIM,
+        )
+
+        if features.shape != expected_shape:
+            raise ValueError(
+                f"Expected feature shape {expected_shape}; "
+                f"received {features.shape}"
+            )
+
+        if features.dtype != np.float32:
+            raise TypeError("Feature arrays must have dtype float32")
+
+        if not np.isfinite(features).all():
+            raise ValueError("Feature arrays must contain only finite values")
+
+        feature_sequences.append(np.ascontiguousarray(features))
+
+    return feature_sequences
+
+
 def analyze_facial_sequence(
     frames: list[np.ndarray],
     bounding_boxes: list[
@@ -63,20 +141,16 @@ def analyze_facial_sequence(
     ],
 ) -> dict[str, Any]:
     """
-    Current C3 reference pipeline.
+    Prepare face ROIs and temporal windows for the C3 reference pipeline.
 
-    Current stage:
-        frames
-        -> face ROI
-        -> temporal sequence
-        -> MobileNetV3-Large interface
+    Feature extraction is available separately through
+    extract_facial_sequence_features(). This function does not execute the
+    pretrained model or generate emotion/risk predictions.
     """
     sequences = prepare_face_sequence(
         frames,
         bounding_boxes,
     )
-
-    model = MobileNetV3LargeFeatureExtractor()
 
     return {
         "stage": "facial_reference",
@@ -86,8 +160,19 @@ def analyze_facial_sequence(
             for sequence in sequences
         ],
         "model": {
-            "name": model.model_name,
-            "status": "interface_only",
+            "name": "MobileNetV3-Large",
+            "status": "available_not_executed",
+            "weights": MOBILENET_V3_WEIGHTS.name,
+            "feature_dim": MOBILENET_V3_FEATURE_DIM,
+        },
+        "feature_extraction": {
+            "status": "not_run",
+            "output_shape_per_window": "(T, 960)",
+            "output_dtype": "float32",
+            "semantics": (
+                "ImageNet-pretrained visual features only; "
+                "not emotion labels or risk predictions"
+            ),
         },
         "micro_expression": {
             "status": "pending_model_implementation",

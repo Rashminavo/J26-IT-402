@@ -38,3 +38,9 @@ def test_build_facial_score():
 
     assert result["score"]["value"] is None
     assert result["confidence"] is None
+    assert result["risk_level"] is None
+    assert result["metadata"]["feature_extraction"]["status"] == "not_run"
+    assert (
+        result["metadata"]["feature_extraction"]["output_shape_per_window"]
+        == "(T, 960)"
+    )
