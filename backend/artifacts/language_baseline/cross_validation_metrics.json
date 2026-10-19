@@ -1,0 +1,89 @@
+{
+  "participants": 107,
+  "label_counts": {
+    "class_0": 77,
+    "class_1": 30
+  },
+  "evaluation": "5-fold stratified cross-validation",
+  "results": [
+    {
+      "model": "majority_baseline",
+      "true_negative": 77,
+      "false_positive": 0,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.72,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.418,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "logistic_unigram",
+      "true_negative": 75,
+      "false_positive": 2,
+      "false_negative": 29,
+      "true_positive": 1,
+      "accuracy": 0.71,
+      "balanced_accuracy": 0.504,
+      "macro_f1": 0.445,
+      "class_1_precision": 0.333,
+      "class_1_recall": 0.033,
+      "class_1_f1": 0.061
+    },
+    {
+      "model": "logistic_unigram_bigram",
+      "true_negative": 76,
+      "false_positive": 1,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.71,
+      "balanced_accuracy": 0.494,
+      "macro_f1": 0.415,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "linear_svc",
+      "true_negative": 76,
+      "false_positive": 1,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.71,
+      "balanced_accuracy": 0.494,
+      "macro_f1": 0.415,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "naive_bayes_word",
+      "true_negative": 77,
+      "false_positive": 0,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.72,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.418,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "logistic_character_ngrams",
+      "true_negative": 75,
+      "false_positive": 2,
+      "false_negative": 27,
+      "true_positive": 3,
+      "accuracy": 0.729,
+      "balanced_accuracy": 0.537,
+      "macro_f1": 0.505,
+      "class_1_precision": 0.6,
+      "class_1_recall": 0.1,
+      "class_1_f1": 0.171
+    }
+  ],
+  "limitation": "Exploratory research only; small dataset and no clinical validation."
+}
