@@ -43,3 +43,11 @@ backend/artifacts/language_baseline/mentalbert_weighted/model/
 # Python cache and temporary files
 __pycache__/
 *.py[cod]
+
+# Python virtual environments
+.venv/
+**/.venv/
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
