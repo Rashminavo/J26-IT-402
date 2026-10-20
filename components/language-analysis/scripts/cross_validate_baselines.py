@@ -21,28 +21,50 @@ from sklearn.svm import LinearSVC
 from language_analysis.dataset import load_labeled_split
 
 
+
 def evaluate(name, model, texts, labels, participant_ids, cv):
-    predictions = cross_val_predict(
-        model, texts, labels, cv=cv, method="predict"
-    )
+    probabilities = None
+
+    if hasattr(model, "predict_proba"):
+        probabilities = cross_val_predict(
+            model,
+            texts,
+            labels,
+            cv=cv,
+            method="predict_proba",
+        )[:, 1]
+        predictions = (probabilities >= 0.5).astype(int)
+    else:
+        predictions = cross_val_predict(
+            model,
+            texts,
+            labels,
+            cv=cv,
+            method="predict",
+        )
 
     tn, fp, fn, tp = confusion_matrix(
-        labels,
-        predictions,
-        labels=[0, 1],
+        labels, predictions, labels=[0, 1]
     ).ravel()
 
-    participant_predictions = [
-        {
+    participant_predictions = []
+
+    for i, (participant_id, actual, predicted) in enumerate(
+        zip(participant_ids, labels, predictions)
+    ):
+        item = {
             "participant_id": str(participant_id),
             "actual_label": int(actual),
             "predicted_label": int(predicted),
             "correct": bool(actual == predicted),
         }
-        for participant_id, actual, predicted in zip(
-            participant_ids, labels, predictions
-        )
-    ]
+
+        if probabilities is not None:
+            item["class_1_probability"] = round(
+                float(probabilities[i]), 4
+            )
+
+        participant_predictions.append(item)
 
     return {
         "model": name,
@@ -72,7 +94,6 @@ def evaluate(name, model, texts, labels, participant_ids, cv):
             3,
         ),
     }
-
 
 
 def main():
