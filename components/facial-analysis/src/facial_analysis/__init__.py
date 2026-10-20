@@ -10,6 +10,7 @@ from .model import (
 )
 from .pipeline import (
     analyze_facial_sequence,
+    extract_facial_sequence_features,
     prepare_face_sequence,
 )
 from .sequence import (
@@ -30,6 +31,7 @@ __all__ = [
     "calculate_sample_indices",
     "detect_faces",
     "extract_face_roi",
+    "extract_facial_sequence_features",
     "load_face_detector",
     "prepare_face_sequence",
     "read_video_frames",
