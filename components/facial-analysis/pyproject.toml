@@ -9,7 +9,9 @@ description = "J26-IT-402 facial emotion and micro-expression analysis component
 requires-python = ">=3.10,<3.14"
 dependencies = [
     "numpy==2.2.6",
-    "opencv-python==4.14.0.94"
+    "opencv-python==4.14.0.94",
+    "torch==2.14.1",
+    "torchvision==0.29.1"
 ]
 
 [tool.setuptools]

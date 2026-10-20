@@ -1,3 +1,4 @@
+import math
 from pathlib import Path
 
 import cv2
@@ -8,6 +9,10 @@ DEFAULT_CASCADE = (
     Path(cv2.data.haarcascades)
     / "haarcascade_frontalface_default.xml"
 )
+
+# Provisional threshold based on local CASME II geometry analysis.
+# It is an engineering heuristic, not a validated research threshold.
+DEFAULT_MIN_FACE_AREA_RATIO = 10.0
 
 
 def load_face_detector() -> cv2.CascadeClassifier:
@@ -63,6 +68,69 @@ def detect_faces(
         )
         for x, y, width, height in faces
     ]
+
+
+
+class FaceNotDetectedError(ValueError):
+    """Raised when an image frame has no accepted face detection."""
+
+
+class AmbiguousFaceDetectionError(ValueError):
+    """Raised when multiple detections cannot be separated confidently."""
+
+
+def select_face_box(
+    faces: list[tuple[int, int, int, int]],
+    min_area_ratio: float = DEFAULT_MIN_FACE_AREA_RATIO,
+) -> tuple[int, int, int, int] | None:
+    """
+    Select a face candidate using a provisional box-area heuristic.
+
+    Returns None for zero detections. A single detection is accepted.
+    With multiple detections, the largest box is accepted only when its
+    area divided by the second-largest area meets min_area_ratio.
+
+    This rule is based on local CASME II geometry observations and has
+    not been validated for general face detection or identity tracking.
+    """
+    if not math.isfinite(min_area_ratio) or min_area_ratio <= 1.0:
+        raise ValueError("min_area_ratio must be finite and greater than 1")
+
+    boxes = []
+
+    for candidate in faces:
+        if len(candidate) != 4:
+            raise ValueError("each bounding box must contain four values")
+
+        x, y, width, height = (int(value) for value in candidate)
+
+        if width <= 0 or height <= 0:
+            raise ValueError("bounding box dimensions must be positive")
+
+        boxes.append((x, y, width, height))
+
+    if not boxes:
+        return None
+
+    boxes.sort(
+        key=lambda box: box[2] * box[3],
+        reverse=True,
+    )
+
+    if len(boxes) > 1:
+        largest_area = boxes[0][2] * boxes[0][3]
+        second_largest_area = boxes[1][2] * boxes[1][3]
+        area_ratio = largest_area / second_largest_area
+
+        if area_ratio < min_area_ratio:
+            raise AmbiguousFaceDetectionError(
+                "Multiple face detections are ambiguous: "
+                f"largest-to-second area ratio {area_ratio:.3f} "
+                f"is below the required {min_area_ratio:.3f}"
+            )
+
+    return boxes[0]
+
 
 
 def extract_face_roi(
