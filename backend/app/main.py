@@ -1,4 +1,5 @@
 from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 from app.api import (
     behavioural_bp,
@@ -11,6 +12,9 @@ from app.api import (
 
 def create_app() -> Flask:
     app = Flask(__name__)
+    @app.get("/")
+    def language_analysis_portal():
+        return render_template("language_analysis.html")
 
     app.register_blueprint(scores_bp)
     app.register_blueprint(language_bp)

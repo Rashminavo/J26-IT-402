@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Analysis Portal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='language_analysis.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">✳</span> MindScope <span class="tag">RESEARCH PORTAL</span></div>
+    <span class="status"><span></span> Model workspace</span>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="eyebrow">AI-POWERED MENTAL HEALTH RESEARCH</p>
+      <h1>Language Analysis <span>Workbench</span></h1>
+      <p class="subtitle">Explore sentiment and language-model outputs from text entries using your VADER and MentalBERT pipeline.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="panel input-panel">
+        <div class="panel-heading">
+          <div><span class="step">01</span><h2>Input text</h2></div>
+          <span class="small-label">TEXT ANALYSIS</span>
+        </div>
+
+        <form id="analysis-form">
+          <label for="user-id">User ID</label>
+          <input id="user-id" value="test-user-001" required maxlength="100">
+
+          <label for="observation-id">Observation ID</label>
+          <input id="observation-id" required maxlength="100">
+
+          <label for="session-id">Session ID <span class="optional">Optional</span></label>
+          <input id="session-id" maxlength="100" placeholder="e.g. session-001">
+
+          <div class="text-label">
+            <label for="input-text">Journal entry or message</label>
+            <span id="char-count">0 characters</span>
+          </div>
+          <textarea id="input-text" required maxlength="12000" placeholder="Write or paste a text entry here...
+
+Example: I have been feeling overwhelmed lately. It has been difficult to stay motivated, but I am trying to talk to people I trust."></textarea>
+
+          <div class="privacy-note">Use anonymized research text. Avoid entering names or personal identifying details.</div>
+          <button id="analyze-button" type="submit"><span>✦</span> Analyze text <span>→</span></button>
+          <button id="clear-button" class="secondary-button" type="button">Clear form</button>
+          <p id="form-error" class="error" role="alert"></p>
+        </form>
+      </div>
+
+      <div class="panel results-panel">
+        <div class="panel-heading">
+          <div><span class="step">02</span><h2>Analysis results</h2></div>
+          <span id="result-status" class="small-label">WAITING FOR INPUT</span>
+        </div>
+
+        <div id="empty-state" class="empty-state">
+          <div class="empty-icon">⌁</div>
+          <h3>Your results will appear here</h3>
+          <p>Enter a text entry and select <b>Analyze text</b> to run the current language-analysis pipeline.</p>
+          <div class="pipeline-flow"><span>Preprocessing</span><i>→</i><span>VADER</span><i>→</i><span>MentalBERT</span></div>
+        </div>
+
+        <div id="loading-state" class="empty-state hidden">
+          <div class="spinner"></div>
+          <h3>Analyzing text…</h3>
+          <p>The language models are processing your input.</p>
+        </div>
+
+        <div id="results" class="hidden">
+          <div class="result-banner">
+            <span class="result-check">✓</span>
+            <div><strong>Analysis completed</strong><p>Model outputs generated successfully.</p></div>
+          </div>
+
+          <h3 class="section-title">VADER sentiment</h3>
+          <div class="metric-grid">
+            <div class="metric"><span>Negative</span><strong id="negative-score">—</strong><div class="meter"><i id="negative-bar"></i></div></div>
+            <div class="metric"><span>Neutral</span><strong id="neutral-score">—</strong><div class="meter"><i id="neutral-bar"></i></div></div>
+            <div class="metric"><span>Positive</span><strong id="positive-score">—</strong><div class="meter"><i id="positive-bar"></i></div></div>
+          </div>
+
+          <div class="compound-row"><span>VADER compound score</span><strong id="compound-score">—</strong></div>
+
+          <h3 class="section-title">MentalBERT prediction</h3>
+          <div class="model-card">
+            <div class="model-top"><div><span class="model-dot"></span><strong>MentalBERT</strong></div><span id="model-device">—</span></div>
+            <p class="disclaimer">Experimental class probabilities — not a clinical diagnosis or calibrated risk score.</p>
+            <div class="prob-row"><span>Class 0</span><strong id="class0-score">—</strong></div>
+            <div class="prob-track"><i id="class0-bar"></i></div>
+            <div class="prob-row"><span>Class 1</span><strong id="class1-score">—</strong></div>
+            <div class="prob-track"><i id="class1-bar"></i></div>
+            <div class="prediction-row"><span>Predicted class</span><strong id="predicted-class">—</strong></div>
+          </div>
+          
+          <h3 class="section-title">Negation Detection</h3>
+<div class="model-card">
+  <div class="prob-row">
+    <span>Negation detected</span>
+    <strong id="negation-detected">—</strong>
+  </div>
+  <div class="prob-row">
+    <span>Negation count</span>
+    <strong id="negation-count">—</strong>
+  </div>
+  <div class="prob-row">
+    <span>Detected words</span>
+    <strong id="negation-words">—</strong>
+  </div>
+</div>
+
+<h3 class="section-title">Sarcasm Detection</h3>
+<div class="model-card">
+  <div class="prob-row">
+    <span>Possible sarcasm</span>
+    <strong id="sarcasm-detected">—</strong>
+  </div>
+  <div class="prob-row">
+    <span>Detection method</span>
+    <strong id="sarcasm-method">—</strong>
+  </div>
+  <div class="prob-row">
+    <span>Detection reason</span>
+    <strong id="sarcasm-reason">—</strong>
+  </div>
+  <p class="disclaimer">
+    Experimental rule-based detection. Results may be inaccurate and are not a clinical assessment.
+  </p>
+</div>
+
+          <h3 class="section-title">Processed text</h3>
+          <div class="processed"><p id="processed-text">—</p><span id="token-count"></span></div>
+
+          <details class="json-details">
+            <summary>View complete API response (JSON)</summary>
+            <pre id="json-output"></pre>
+          </details>
+        </div>
+        <p id="api-error" class="error" role="alert"></p>
+      </div>
+    </section>
+
+    <footer>Research prototype · Outputs are experimental and must not be used for diagnosis.</footer>
+  </main>
+  <script src="{{ url_for('static', filename='language_analysis.js') }}"></script>
+</body>
+</html>
