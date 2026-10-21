@@ -12,12 +12,14 @@ def build_language_score(
     timestamp: str | None = None,
 ) -> dict[str, Any]:
     """
-    Convert current VADER evidence into the shared component score contract.
+    Convert language-analysis outputs into the shared component score contract.
 
     VADER sentiment is not the final Mental Health Risk Score.
     """
 
     analysis = analyze_text(text)
+
+    mentalbert_result = analysis.get("mentalbert")
 
     compound = float(analysis["sentiment"]["compound"])
 
@@ -40,21 +42,24 @@ def build_language_score(
             "min": -1,
             "max": 1,
             "normalized_value": normalized_value,
-            "unit": "vader_compound"
+            "unit": "vader_compound",
         },
         "confidence": None,
         "risk_level": None,
         "risk_level_scheme": None,
         "data_quality": {
-            "completeness": 1.0
+            "completeness": 1.0,
         },
         "model": {
             "name": "VADER",
-            "version": "3.10"
+            "version": "3.10",
         },
         "metadata": {
-            "stage": "vader_mvp",
+            "stage": analysis["stage"],
             "sentiment": analysis["sentiment"],
-            "token_count": analysis["preprocessing"]["token_count"]
-        }
+            "token_count": analysis["preprocessing"]["token_count"],
+            "mentalbert": mentalbert_result,
+            "negation": analysis["negation"],
+            "sarcasm": analysis["sarcasm"],
+        },
     }

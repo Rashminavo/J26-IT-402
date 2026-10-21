@@ -33,3 +33,21 @@ Thumbs.db
 
 # Packaging metadata
 *.egg-info/
+
+# Large model files and training checkpoints
+backend/artifacts/language_baseline/mentalbert/checkpoints/
+backend/artifacts/language_baseline/mentalbert/model/
+backend/artifacts/language_baseline/mentalbert_weighted/checkpoints/
+backend/artifacts/language_baseline/mentalbert_weighted/model/
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+
+# Python virtual environments
+.venv/
+**/.venv/
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]

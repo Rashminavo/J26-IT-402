@@ -60,10 +60,9 @@ def build_facial_score(
             "version": None,
         },
         "metadata": {
-            "stage": "facial_reference",
-            "sequence_shapes": analysis[
-                "sequence_shapes"
-            ],
+            "stage": analysis["stage"],
+            "feature_extraction": analysis["feature_extraction"],
+            "sequence_shapes": analysis["sequence_shapes"],
             "micro_expression_status": analysis[
                 "micro_expression"
             ]["status"],

@@ -1,0 +1,51 @@
+{
+  "task": "PHQ8_Binary classification",
+  "train_participants": 107,
+  "dev_participants": 34,
+  "missing_train_transcripts": 0,
+  "missing_dev_transcripts": 1,
+  "accuracy": 0.6470588235294118,
+  "f1_macro": 0.39285714285714285,
+  "confusion_matrix_labels": [
+    0,
+    1
+  ],
+  "confusion_matrix": [
+    [
+      22,
+      0
+    ],
+    [
+      12,
+      0
+    ]
+  ],
+  "classification_report": {
+    "PHQ8_Binary_0": {
+      "precision": 0.6470588235294118,
+      "recall": 1.0,
+      "f1-score": 0.7857142857142857,
+      "support": 22.0
+    },
+    "PHQ8_Binary_1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12.0
+    },
+    "accuracy": 0.6470588235294118,
+    "macro avg": {
+      "precision": 0.3235294117647059,
+      "recall": 0.5,
+      "f1-score": 0.39285714285714285,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.41868512110726647,
+      "recall": 0.6470588235294118,
+      "f1-score": 0.5084033613445378,
+      "support": 34.0
+    }
+  },
+  "warning": "Research baseline only; not a clinically validated diagnostic or risk assessment tool."
+}

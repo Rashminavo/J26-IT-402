@@ -1,0 +1,59 @@
+{
+  "model": "mental/mental-bert-base-uncased",
+  "task": "PHQ8_Binary classification",
+  "train_participants": 107,
+  "dev_participants": 34,
+  "max_length": 256,
+  "epochs": 3,
+  "seed": 42,
+  "evaluation": {
+    "eval_loss": 0.840980052947998,
+    "eval_accuracy": 0.6470588235294118,
+    "eval_balanced_accuracy": 0.5,
+    "eval_macro_f1": 0.39285714285714285,
+    "eval_class_1_precision": 0.0,
+    "eval_class_1_recall": 0.0,
+    "eval_runtime": 1.5861,
+    "eval_samples_per_second": 21.436,
+    "eval_steps_per_second": 10.718,
+    "epoch": 3.0
+  },
+  "confusion_matrix": [
+    [
+      22,
+      0
+    ],
+    [
+      12,
+      0
+    ]
+  ],
+  "classification_report": {
+    "PHQ8_Binary_0": {
+      "precision": 0.6470588235294118,
+      "recall": 1.0,
+      "f1-score": 0.7857142857142857,
+      "support": 22.0
+    },
+    "PHQ8_Binary_1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12.0
+    },
+    "accuracy": 0.6470588235294118,
+    "macro avg": {
+      "precision": 0.3235294117647059,
+      "recall": 0.5,
+      "f1-score": 0.39285714285714285,
+      "support": 34.0
+    },
+    "weighted avg": {
+      "precision": 0.41868512110726647,
+      "recall": 0.6470588235294118,
+      "f1-score": 0.5084033613445378,
+      "support": 34.0
+    }
+  },
+  "limitation": "Exploratory university research only. Not clinically validated."
+}

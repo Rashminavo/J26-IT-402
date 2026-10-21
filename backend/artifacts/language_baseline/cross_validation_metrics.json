@@ -1,0 +1,4488 @@
+{
+  "participants": 107,
+  "label_counts": {
+    "class_0": 77,
+    "class_1": 30
+  },
+  "evaluation": "5-fold stratified cross-validation",
+  "results": [
+    {
+      "model": "majority_baseline",
+      "predictions": [
+        {
+          "participant_id": "303",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "304",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "305",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "310",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "312",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "313",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "315",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "316",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "317",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "318",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "319",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "320",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "321",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "322",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "324",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "325",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "326",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "327",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "328",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "330",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "333",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "336",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "338",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "339",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "340",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "341",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "343",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "344",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "345",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "347",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "348",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "350",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "351",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "352",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "353",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "355",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "356",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "357",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "358",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "360",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "362",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "363",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "364",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "366",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "368",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "369",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "370",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "371",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "372",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "374",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "375",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "376",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "379",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "380",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "383",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "385",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "386",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "391",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "392",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "393",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "397",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "400",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "401",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "402",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "409",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "412",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "414",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "415",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "416",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "419",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "423",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "425",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "426",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "427",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "428",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "429",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "430",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "433",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "434",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "437",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "441",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "443",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "444",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "445",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "446",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "447",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "448",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "449",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "454",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "455",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "456",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "457",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "459",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "463",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "464",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "468",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "471",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "473",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "474",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "475",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "478",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "479",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "485",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "486",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "487",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "488",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        },
+        {
+          "participant_id": "491",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0
+        }
+      ],
+      "true_negative": 77,
+      "false_positive": 0,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.72,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.418,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "logistic_unigram",
+      "predictions": [
+        {
+          "participant_id": "303",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4524
+        },
+        {
+          "participant_id": "304",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4666
+        },
+        {
+          "participant_id": "305",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4873
+        },
+        {
+          "participant_id": "310",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4438
+        },
+        {
+          "participant_id": "312",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4662
+        },
+        {
+          "participant_id": "313",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4596
+        },
+        {
+          "participant_id": "315",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4664
+        },
+        {
+          "participant_id": "316",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4816
+        },
+        {
+          "participant_id": "317",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4721
+        },
+        {
+          "participant_id": "318",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4413
+        },
+        {
+          "participant_id": "319",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4617
+        },
+        {
+          "participant_id": "320",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4892
+        },
+        {
+          "participant_id": "321",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4917
+        },
+        {
+          "participant_id": "322",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4708
+        },
+        {
+          "participant_id": "324",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4492
+        },
+        {
+          "participant_id": "325",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4657
+        },
+        {
+          "participant_id": "326",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4293
+        },
+        {
+          "participant_id": "327",
+          "actual_label": 0,
+          "predicted_label": 1,
+          "correct": false,
+          "class_1_probability": 0.508
+        },
+        {
+          "participant_id": "328",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4789
+        },
+        {
+          "participant_id": "330",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4752
+        },
+        {
+          "participant_id": "333",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4694
+        },
+        {
+          "participant_id": "336",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4452
+        },
+        {
+          "participant_id": "338",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4822
+        },
+        {
+          "participant_id": "339",
+          "actual_label": 1,
+          "predicted_label": 1,
+          "correct": true,
+          "class_1_probability": 0.5074
+        },
+        {
+          "participant_id": "340",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.468
+        },
+        {
+          "participant_id": "341",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4956
+        },
+        {
+          "participant_id": "343",
+          "actual_label": 0,
+          "predicted_label": 1,
+          "correct": false,
+          "class_1_probability": 0.506
+        },
+        {
+          "participant_id": "344",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4698
+        },
+        {
+          "participant_id": "345",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4767
+        },
+        {
+          "participant_id": "347",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.487
+        },
+        {
+          "participant_id": "348",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4516
+        },
+        {
+          "participant_id": "350",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4822
+        },
+        {
+          "participant_id": "351",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4838
+        },
+        {
+          "participant_id": "352",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4634
+        },
+        {
+          "participant_id": "353",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.475
+        },
+        {
+          "participant_id": "355",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.465
+        },
+        {
+          "participant_id": "356",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4596
+        },
+        {
+          "participant_id": "357",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.42
+        },
+        {
+          "participant_id": "358",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4749
+        },
+        {
+          "participant_id": "360",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4767
+        },
+        {
+          "participant_id": "362",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4898
+        },
+        {
+          "participant_id": "363",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4452
+        },
+        {
+          "participant_id": "364",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4606
+        },
+        {
+          "participant_id": "366",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4238
+        },
+        {
+          "participant_id": "368",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4583
+        },
+        {
+          "participant_id": "369",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4674
+        },
+        {
+          "participant_id": "370",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4256
+        },
+        {
+          "participant_id": "371",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4343
+        },
+        {
+          "participant_id": "372",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4648
+        },
+        {
+          "participant_id": "374",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4388
+        },
+        {
+          "participant_id": "375",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.446
+        },
+        {
+          "participant_id": "376",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4995
+        },
+        {
+          "participant_id": "379",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4118
+        },
+        {
+          "participant_id": "380",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4225
+        },
+        {
+          "participant_id": "383",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.445
+        },
+        {
+          "participant_id": "385",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4399
+        },
+        {
+          "participant_id": "386",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4402
+        },
+        {
+          "participant_id": "391",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4507
+        },
+        {
+          "participant_id": "392",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4152
+        },
+        {
+          "participant_id": "393",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4301
+        },
+        {
+          "participant_id": "397",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4766
+        },
+        {
+          "participant_id": "400",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4578
+        },
+        {
+          "participant_id": "401",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4368
+        },
+        {
+          "participant_id": "402",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4717
+        },
+        {
+          "participant_id": "409",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.434
+        },
+        {
+          "participant_id": "412",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4231
+        },
+        {
+          "participant_id": "414",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4856
+        },
+        {
+          "participant_id": "415",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4395
+        },
+        {
+          "participant_id": "416",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4441
+        },
+        {
+          "participant_id": "419",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4439
+        },
+        {
+          "participant_id": "423",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4367
+        },
+        {
+          "participant_id": "425",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4777
+        },
+        {
+          "participant_id": "426",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4471
+        },
+        {
+          "participant_id": "427",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4431
+        },
+        {
+          "participant_id": "428",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4128
+        },
+        {
+          "participant_id": "429",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4738
+        },
+        {
+          "participant_id": "430",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4667
+        },
+        {
+          "participant_id": "433",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4517
+        },
+        {
+          "participant_id": "434",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4419
+        },
+        {
+          "participant_id": "437",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4435
+        },
+        {
+          "participant_id": "441",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4853
+        },
+        {
+          "participant_id": "443",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4483
+        },
+        {
+          "participant_id": "444",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4776
+        },
+        {
+          "participant_id": "445",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4574
+        },
+        {
+          "participant_id": "446",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4658
+        },
+        {
+          "participant_id": "447",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4596
+        },
+        {
+          "participant_id": "448",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4407
+        },
+        {
+          "participant_id": "449",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4397
+        },
+        {
+          "participant_id": "454",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4644
+        },
+        {
+          "participant_id": "455",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4532
+        },
+        {
+          "participant_id": "456",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.403
+        },
+        {
+          "participant_id": "457",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4346
+        },
+        {
+          "participant_id": "459",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4778
+        },
+        {
+          "participant_id": "463",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4769
+        },
+        {
+          "participant_id": "464",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.441
+        },
+        {
+          "participant_id": "468",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4604
+        },
+        {
+          "participant_id": "471",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4595
+        },
+        {
+          "participant_id": "473",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4506
+        },
+        {
+          "participant_id": "474",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4757
+        },
+        {
+          "participant_id": "475",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4395
+        },
+        {
+          "participant_id": "478",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4975
+        },
+        {
+          "participant_id": "479",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4804
+        },
+        {
+          "participant_id": "485",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4536
+        },
+        {
+          "participant_id": "486",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4594
+        },
+        {
+          "participant_id": "487",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4472
+        },
+        {
+          "participant_id": "488",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4415
+        },
+        {
+          "participant_id": "491",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.444
+        }
+      ],
+      "true_negative": 75,
+      "false_positive": 2,
+      "false_negative": 29,
+      "true_positive": 1,
+      "accuracy": 0.71,
+      "balanced_accuracy": 0.504,
+      "macro_f1": 0.445,
+      "class_1_precision": 0.333,
+      "class_1_recall": 0.033,
+      "class_1_f1": 0.061
+    },
+    {
+      "model": "logistic_unigram_bigram",
+      "predictions": [
+        {
+          "participant_id": "303",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4943
+        },
+        {
+          "participant_id": "304",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4955
+        },
+        {
+          "participant_id": "305",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "310",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4911
+        },
+        {
+          "participant_id": "312",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4929
+        },
+        {
+          "participant_id": "313",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4926
+        },
+        {
+          "participant_id": "315",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4955
+        },
+        {
+          "participant_id": "316",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4982
+        },
+        {
+          "participant_id": "317",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "318",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4928
+        },
+        {
+          "participant_id": "319",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4946
+        },
+        {
+          "participant_id": "320",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "321",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4988
+        },
+        {
+          "participant_id": "322",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4935
+        },
+        {
+          "participant_id": "324",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4926
+        },
+        {
+          "participant_id": "325",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4965
+        },
+        {
+          "participant_id": "326",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4918
+        },
+        {
+          "participant_id": "327",
+          "actual_label": 0,
+          "predicted_label": 1,
+          "correct": false,
+          "class_1_probability": 0.501
+        },
+        {
+          "participant_id": "328",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "330",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4927
+        },
+        {
+          "participant_id": "333",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4954
+        },
+        {
+          "participant_id": "336",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "338",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4991
+        },
+        {
+          "participant_id": "339",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4978
+        },
+        {
+          "participant_id": "340",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4936
+        },
+        {
+          "participant_id": "341",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4958
+        },
+        {
+          "participant_id": "343",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4967
+        },
+        {
+          "participant_id": "344",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4937
+        },
+        {
+          "participant_id": "345",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4947
+        },
+        {
+          "participant_id": "347",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.495
+        },
+        {
+          "participant_id": "348",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4922
+        },
+        {
+          "participant_id": "350",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4973
+        },
+        {
+          "participant_id": "351",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4952
+        },
+        {
+          "participant_id": "352",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4949
+        },
+        {
+          "participant_id": "353",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4978
+        },
+        {
+          "participant_id": "355",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4931
+        },
+        {
+          "participant_id": "356",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4949
+        },
+        {
+          "participant_id": "357",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4928
+        },
+        {
+          "participant_id": "358",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4944
+        },
+        {
+          "participant_id": "360",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4963
+        },
+        {
+          "participant_id": "362",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4971
+        },
+        {
+          "participant_id": "363",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4948
+        },
+        {
+          "participant_id": "364",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "366",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4903
+        },
+        {
+          "participant_id": "368",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4917
+        },
+        {
+          "participant_id": "369",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4928
+        },
+        {
+          "participant_id": "370",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4905
+        },
+        {
+          "participant_id": "371",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4916
+        },
+        {
+          "participant_id": "372",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4949
+        },
+        {
+          "participant_id": "374",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.49
+        },
+        {
+          "participant_id": "375",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4936
+        },
+        {
+          "participant_id": "376",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4974
+        },
+        {
+          "participant_id": "379",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4918
+        },
+        {
+          "participant_id": "380",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.489
+        },
+        {
+          "participant_id": "383",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4914
+        },
+        {
+          "participant_id": "385",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4926
+        },
+        {
+          "participant_id": "386",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4927
+        },
+        {
+          "participant_id": "391",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4935
+        },
+        {
+          "participant_id": "392",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4894
+        },
+        {
+          "participant_id": "393",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4926
+        },
+        {
+          "participant_id": "397",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "400",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4949
+        },
+        {
+          "participant_id": "401",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4939
+        },
+        {
+          "participant_id": "402",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.496
+        },
+        {
+          "participant_id": "409",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4928
+        },
+        {
+          "participant_id": "412",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4891
+        },
+        {
+          "participant_id": "414",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4966
+        },
+        {
+          "participant_id": "415",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4947
+        },
+        {
+          "participant_id": "416",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4915
+        },
+        {
+          "participant_id": "419",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4938
+        },
+        {
+          "participant_id": "423",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "425",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4949
+        },
+        {
+          "participant_id": "426",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.493
+        },
+        {
+          "participant_id": "427",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "428",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4903
+        },
+        {
+          "participant_id": "429",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "430",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4945
+        },
+        {
+          "participant_id": "433",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "434",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4923
+        },
+        {
+          "participant_id": "437",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4909
+        },
+        {
+          "participant_id": "441",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4963
+        },
+        {
+          "participant_id": "443",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "444",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4947
+        },
+        {
+          "participant_id": "445",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4936
+        },
+        {
+          "participant_id": "446",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4961
+        },
+        {
+          "participant_id": "447",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4935
+        },
+        {
+          "participant_id": "448",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4924
+        },
+        {
+          "participant_id": "449",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4921
+        },
+        {
+          "participant_id": "454",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4952
+        },
+        {
+          "participant_id": "455",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4932
+        },
+        {
+          "participant_id": "456",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4906
+        },
+        {
+          "participant_id": "457",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4926
+        },
+        {
+          "participant_id": "459",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4974
+        },
+        {
+          "participant_id": "463",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "464",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4901
+        },
+        {
+          "participant_id": "468",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4945
+        },
+        {
+          "participant_id": "471",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4944
+        },
+        {
+          "participant_id": "473",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.492
+        },
+        {
+          "participant_id": "474",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4946
+        },
+        {
+          "participant_id": "475",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4917
+        },
+        {
+          "participant_id": "478",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4963
+        },
+        {
+          "participant_id": "479",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4956
+        },
+        {
+          "participant_id": "485",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4918
+        },
+        {
+          "participant_id": "486",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4945
+        },
+        {
+          "participant_id": "487",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4931
+        },
+        {
+          "participant_id": "488",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "491",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4948
+        }
+      ],
+      "true_negative": 76,
+      "false_positive": 1,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.71,
+      "balanced_accuracy": 0.494,
+      "macro_f1": 0.415,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "linear_svc",
+      "predictions": [
+        {
+          "participant_id": "303",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "304",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "305",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "310",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "312",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "313",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "315",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "316",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "317",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "318",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "319",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "320",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "321",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "322",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "324",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "325",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "326",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "327",
+          "actual_label": 0,
+          "predicted_label": 1,
+          "correct": false
+        },
+        {
+          "participant_id": "328",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "330",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "333",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "336",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "338",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "339",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "340",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "341",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "343",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "344",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "345",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "347",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "348",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "350",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "351",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "352",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "353",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "355",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "356",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "357",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "358",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "360",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "362",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "363",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "364",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "366",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "368",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "369",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "370",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "371",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "372",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "374",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "375",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "376",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "379",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "380",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "383",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "385",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "386",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "391",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "392",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "393",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "397",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "400",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "401",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "402",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "409",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "412",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "414",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "415",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "416",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "419",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "423",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "425",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "426",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "427",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "428",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "429",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "430",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "433",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "434",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "437",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "441",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "443",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "444",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "445",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "446",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "447",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "448",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "449",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "454",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "455",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "456",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "457",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "459",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false
+        },
+        {
+          "participant_id": "463",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "464",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "468",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "471",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "473",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "474",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "475",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "478",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "479",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "485",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "486",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "487",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "488",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        },
+        {
+          "participant_id": "491",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true
+        }
+      ],
+      "true_negative": 76,
+      "false_positive": 1,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.71,
+      "balanced_accuracy": 0.494,
+      "macro_f1": 0.415,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "naive_bayes_word",
+      "predictions": [
+        {
+          "participant_id": "303",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0275
+        },
+        {
+          "participant_id": "304",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0312
+        },
+        {
+          "participant_id": "305",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0227
+        },
+        {
+          "participant_id": "310",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0209
+        },
+        {
+          "participant_id": "312",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0224
+        },
+        {
+          "participant_id": "313",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0224
+        },
+        {
+          "participant_id": "315",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.022
+        },
+        {
+          "participant_id": "316",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0408
+        },
+        {
+          "participant_id": "317",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0372
+        },
+        {
+          "participant_id": "318",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0254
+        },
+        {
+          "participant_id": "319",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.034
+        },
+        {
+          "participant_id": "320",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.039
+        },
+        {
+          "participant_id": "321",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0414
+        },
+        {
+          "participant_id": "322",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.024
+        },
+        {
+          "participant_id": "324",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0218
+        },
+        {
+          "participant_id": "325",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0267
+        },
+        {
+          "participant_id": "326",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0307
+        },
+        {
+          "participant_id": "327",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0658
+        },
+        {
+          "participant_id": "328",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0227
+        },
+        {
+          "participant_id": "330",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0405
+        },
+        {
+          "participant_id": "333",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.023
+        },
+        {
+          "participant_id": "336",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0275
+        },
+        {
+          "participant_id": "338",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0405
+        },
+        {
+          "participant_id": "339",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0406
+        },
+        {
+          "participant_id": "340",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0301
+        },
+        {
+          "participant_id": "341",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.027
+        },
+        {
+          "participant_id": "343",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0363
+        },
+        {
+          "participant_id": "344",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0234
+        },
+        {
+          "participant_id": "345",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0217
+        },
+        {
+          "participant_id": "347",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0388
+        },
+        {
+          "participant_id": "348",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0207
+        },
+        {
+          "participant_id": "350",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0213
+        },
+        {
+          "participant_id": "351",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0259
+        },
+        {
+          "participant_id": "352",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0208
+        },
+        {
+          "participant_id": "353",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0324
+        },
+        {
+          "participant_id": "355",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0265
+        },
+        {
+          "participant_id": "356",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0229
+        },
+        {
+          "participant_id": "357",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0402
+        },
+        {
+          "participant_id": "358",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0307
+        },
+        {
+          "participant_id": "360",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0501
+        },
+        {
+          "participant_id": "362",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0383
+        },
+        {
+          "participant_id": "363",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0188
+        },
+        {
+          "participant_id": "364",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0204
+        },
+        {
+          "participant_id": "366",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0118
+        },
+        {
+          "participant_id": "368",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0184
+        },
+        {
+          "participant_id": "369",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0219
+        },
+        {
+          "participant_id": "370",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0112
+        },
+        {
+          "participant_id": "371",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0185
+        },
+        {
+          "participant_id": "372",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0219
+        },
+        {
+          "participant_id": "374",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0108
+        },
+        {
+          "participant_id": "375",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0265
+        },
+        {
+          "participant_id": "376",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0229
+        },
+        {
+          "participant_id": "379",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0155
+        },
+        {
+          "participant_id": "380",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0108
+        },
+        {
+          "participant_id": "383",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0171
+        },
+        {
+          "participant_id": "385",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0522
+        },
+        {
+          "participant_id": "386",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0187
+        },
+        {
+          "participant_id": "391",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0319
+        },
+        {
+          "participant_id": "392",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0161
+        },
+        {
+          "participant_id": "393",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0223
+        },
+        {
+          "participant_id": "397",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0191
+        },
+        {
+          "participant_id": "400",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0264
+        },
+        {
+          "participant_id": "401",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.021
+        },
+        {
+          "participant_id": "402",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.027
+        },
+        {
+          "participant_id": "409",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0178
+        },
+        {
+          "participant_id": "412",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0205
+        },
+        {
+          "participant_id": "414",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.023
+        },
+        {
+          "participant_id": "415",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0245
+        },
+        {
+          "participant_id": "416",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0165
+        },
+        {
+          "participant_id": "419",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0176
+        },
+        {
+          "participant_id": "423",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0273
+        },
+        {
+          "participant_id": "425",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0206
+        },
+        {
+          "participant_id": "426",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0235
+        },
+        {
+          "participant_id": "427",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.024
+        },
+        {
+          "participant_id": "428",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.017
+        },
+        {
+          "participant_id": "429",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0287
+        },
+        {
+          "participant_id": "430",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0204
+        },
+        {
+          "participant_id": "433",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0289
+        },
+        {
+          "participant_id": "434",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0168
+        },
+        {
+          "participant_id": "437",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0184
+        },
+        {
+          "participant_id": "441",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0446
+        },
+        {
+          "participant_id": "443",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0414
+        },
+        {
+          "participant_id": "444",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0209
+        },
+        {
+          "participant_id": "445",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0269
+        },
+        {
+          "participant_id": "446",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0226
+        },
+        {
+          "participant_id": "447",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0209
+        },
+        {
+          "participant_id": "448",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0172
+        },
+        {
+          "participant_id": "449",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0164
+        },
+        {
+          "participant_id": "454",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0392
+        },
+        {
+          "participant_id": "455",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0243
+        },
+        {
+          "participant_id": "456",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0141
+        },
+        {
+          "participant_id": "457",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0163
+        },
+        {
+          "participant_id": "459",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.0323
+        },
+        {
+          "participant_id": "463",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.025
+        },
+        {
+          "participant_id": "464",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0166
+        },
+        {
+          "participant_id": "468",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0259
+        },
+        {
+          "participant_id": "471",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0272
+        },
+        {
+          "participant_id": "473",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0291
+        },
+        {
+          "participant_id": "474",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0194
+        },
+        {
+          "participant_id": "475",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0277
+        },
+        {
+          "participant_id": "478",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.026
+        },
+        {
+          "participant_id": "479",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0354
+        },
+        {
+          "participant_id": "485",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0203
+        },
+        {
+          "participant_id": "486",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0294
+        },
+        {
+          "participant_id": "487",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0218
+        },
+        {
+          "participant_id": "488",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0236
+        },
+        {
+          "participant_id": "491",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.0311
+        }
+      ],
+      "true_negative": 77,
+      "false_positive": 0,
+      "false_negative": 30,
+      "true_positive": 0,
+      "accuracy": 0.72,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.418,
+      "class_1_precision": 0.0,
+      "class_1_recall": 0.0,
+      "class_1_f1": 0.0
+    },
+    {
+      "model": "logistic_character_ngrams",
+      "predictions": [
+        {
+          "participant_id": "303",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4949
+        },
+        {
+          "participant_id": "304",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4971
+        },
+        {
+          "participant_id": "305",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.5
+        },
+        {
+          "participant_id": "310",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4933
+        },
+        {
+          "participant_id": "312",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "313",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4964
+        },
+        {
+          "participant_id": "315",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4953
+        },
+        {
+          "participant_id": "316",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4955
+        },
+        {
+          "participant_id": "317",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4967
+        },
+        {
+          "participant_id": "318",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4925
+        },
+        {
+          "participant_id": "319",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4953
+        },
+        {
+          "participant_id": "320",
+          "actual_label": 1,
+          "predicted_label": 1,
+          "correct": true,
+          "class_1_probability": 0.5007
+        },
+        {
+          "participant_id": "321",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4985
+        },
+        {
+          "participant_id": "322",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4963
+        },
+        {
+          "participant_id": "324",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4933
+        },
+        {
+          "participant_id": "325",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4976
+        },
+        {
+          "participant_id": "326",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4938
+        },
+        {
+          "participant_id": "327",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4988
+        },
+        {
+          "participant_id": "328",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4975
+        },
+        {
+          "participant_id": "330",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4954
+        },
+        {
+          "participant_id": "333",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4939
+        },
+        {
+          "participant_id": "336",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4934
+        },
+        {
+          "participant_id": "338",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4971
+        },
+        {
+          "participant_id": "339",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4991
+        },
+        {
+          "participant_id": "340",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4947
+        },
+        {
+          "participant_id": "341",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4989
+        },
+        {
+          "participant_id": "343",
+          "actual_label": 0,
+          "predicted_label": 1,
+          "correct": false,
+          "class_1_probability": 0.5007
+        },
+        {
+          "participant_id": "344",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4976
+        },
+        {
+          "participant_id": "345",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4982
+        },
+        {
+          "participant_id": "347",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4985
+        },
+        {
+          "participant_id": "348",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4946
+        },
+        {
+          "participant_id": "350",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4985
+        },
+        {
+          "participant_id": "351",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4991
+        },
+        {
+          "participant_id": "352",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4988
+        },
+        {
+          "participant_id": "353",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4974
+        },
+        {
+          "participant_id": "355",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4969
+        },
+        {
+          "participant_id": "356",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4988
+        },
+        {
+          "participant_id": "357",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4923
+        },
+        {
+          "participant_id": "358",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4981
+        },
+        {
+          "participant_id": "360",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4974
+        },
+        {
+          "participant_id": "362",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4977
+        },
+        {
+          "participant_id": "363",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4922
+        },
+        {
+          "participant_id": "364",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4969
+        },
+        {
+          "participant_id": "366",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4904
+        },
+        {
+          "participant_id": "368",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4963
+        },
+        {
+          "participant_id": "369",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4969
+        },
+        {
+          "participant_id": "370",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.491
+        },
+        {
+          "participant_id": "371",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.492
+        },
+        {
+          "participant_id": "372",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "374",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4944
+        },
+        {
+          "participant_id": "375",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "376",
+          "actual_label": 1,
+          "predicted_label": 1,
+          "correct": true,
+          "class_1_probability": 0.502
+        },
+        {
+          "participant_id": "379",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4918
+        },
+        {
+          "participant_id": "380",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4926
+        },
+        {
+          "participant_id": "383",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4954
+        },
+        {
+          "participant_id": "385",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4923
+        },
+        {
+          "participant_id": "386",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4923
+        },
+        {
+          "participant_id": "391",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4938
+        },
+        {
+          "participant_id": "392",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4923
+        },
+        {
+          "participant_id": "393",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4897
+        },
+        {
+          "participant_id": "397",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4976
+        },
+        {
+          "participant_id": "400",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4969
+        },
+        {
+          "participant_id": "401",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4921
+        },
+        {
+          "participant_id": "402",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4958
+        },
+        {
+          "participant_id": "409",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4935
+        },
+        {
+          "participant_id": "412",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4907
+        },
+        {
+          "participant_id": "414",
+          "actual_label": 1,
+          "predicted_label": 1,
+          "correct": true,
+          "class_1_probability": 0.5002
+        },
+        {
+          "participant_id": "415",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4927
+        },
+        {
+          "participant_id": "416",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4917
+        },
+        {
+          "participant_id": "419",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4928
+        },
+        {
+          "participant_id": "423",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4929
+        },
+        {
+          "participant_id": "425",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4966
+        },
+        {
+          "participant_id": "426",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4942
+        },
+        {
+          "participant_id": "427",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4921
+        },
+        {
+          "participant_id": "428",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4899
+        },
+        {
+          "participant_id": "429",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4952
+        },
+        {
+          "participant_id": "430",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4958
+        },
+        {
+          "participant_id": "433",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4943
+        },
+        {
+          "participant_id": "434",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.493
+        },
+        {
+          "participant_id": "437",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4931
+        },
+        {
+          "participant_id": "441",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4969
+        },
+        {
+          "participant_id": "443",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "444",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4971
+        },
+        {
+          "participant_id": "445",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "446",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4967
+        },
+        {
+          "participant_id": "447",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4953
+        },
+        {
+          "participant_id": "448",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4929
+        },
+        {
+          "participant_id": "449",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4934
+        },
+        {
+          "participant_id": "454",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4947
+        },
+        {
+          "participant_id": "455",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "456",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4904
+        },
+        {
+          "participant_id": "457",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4925
+        },
+        {
+          "participant_id": "459",
+          "actual_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "class_1_probability": 0.4981
+        },
+        {
+          "participant_id": "463",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "464",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4928
+        },
+        {
+          "participant_id": "468",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4925
+        },
+        {
+          "participant_id": "471",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4958
+        },
+        {
+          "participant_id": "473",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4941
+        },
+        {
+          "participant_id": "474",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4944
+        },
+        {
+          "participant_id": "475",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "478",
+          "actual_label": 0,
+          "predicted_label": 1,
+          "correct": false,
+          "class_1_probability": 0.5004
+        },
+        {
+          "participant_id": "479",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4963
+        },
+        {
+          "participant_id": "485",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.494
+        },
+        {
+          "participant_id": "486",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4951
+        },
+        {
+          "participant_id": "487",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4943
+        },
+        {
+          "participant_id": "488",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.4947
+        },
+        {
+          "participant_id": "491",
+          "actual_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "class_1_probability": 0.493
+        }
+      ],
+      "true_negative": 75,
+      "false_positive": 2,
+      "false_negative": 27,
+      "true_positive": 3,
+      "accuracy": 0.729,
+      "balanced_accuracy": 0.537,
+      "macro_f1": 0.505,
+      "class_1_precision": 0.6,
+      "class_1_recall": 0.1,
+      "class_1_f1": 0.171
+    }
+  ],
+  "limitation": "Exploratory research only; small dataset and no clinical validation."
+}
