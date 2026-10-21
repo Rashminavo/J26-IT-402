@@ -98,6 +98,7 @@ def make_chunks(text, tokenizer):
 # ============================================================
 
 
+
 def predict_participant(transcript, tokenizer, model, device):
     """
     Split a transcript into chunks, predict each chunk,
@@ -147,6 +148,7 @@ def predict_participant(transcript, tokenizer, model, device):
     return participant_probability, len(chunks)
 
 
+
 # ============================================================
 # EVALUATION
 # ============================================================
@@ -175,7 +177,7 @@ def evaluate_split(
             device,
         )
 
-        label = int(row["label"])
+        label = int(row["phq8_binary"])
         prediction = int(probability >= THRESHOLD)
 
         participant_id = row.get(

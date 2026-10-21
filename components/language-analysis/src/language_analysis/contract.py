@@ -18,6 +18,7 @@ def build_language_score(
     """
 
     analysis = analyze_text(text)
+    mentalbert_result = analysis.get("mentalbert")
 
     compound = float(analysis["sentiment"]["compound"])
 
@@ -53,8 +54,9 @@ def build_language_score(
             "version": "3.10"
         },
         "metadata": {
-            "stage": "vader_mvp",
+            "stage": analysis["stage"],
             "sentiment": analysis["sentiment"],
-            "token_count": analysis["preprocessing"]["token_count"]
-        }
+            "token_count": analysis["preprocessing"]["token_count"],
+            "mentalbert": mentalbert_result,
+}
     }
